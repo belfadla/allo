@@ -1,0 +1,82 @@
+@extends('index')
+@section('content') 
+<section class="inner-intro bg-img light-color overlay-before parallax-background">
+			<div class="container">
+				<div class="row title">
+					<div class="title_row">
+						<h1 data-title="Services Detail"><span>Services Detail</span></h1>
+					
+						@if(empty($detail))
+						<div class="page-breadcrumb">
+						<a>Acceuil</a>&nbsp;&nbsp;>>&nbsp;&nbsp;<a href="{{url('/ToutLesServices')}}">Tous Les Services</a>&nbsp;&nbsp;>>&nbsp;&nbsp;<span>{{$detail->name}}</span>
+						</div>
+						@else
+						<div class="page-breadcrumb">
+						<a>Acceuil</a>&nbsp;&nbsp;>>&nbsp;&nbsp;<a href="{{url('/ToutLesServices')}}">Tous Les Services</a>&nbsp;&nbsp;>>&nbsp;&nbsp;<a href="#">{{$detail->name}}</a>>>&nbsp;&nbsp;<span>{{$details->name}}</span>
+
+						</div>
+						@endif
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- Intro Section -->
+		<div id="services-section" class="padding ptb-xs-40">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-sx-12">
+					
+					<div class="single-sidebar-widget">
+					       <div class="sec-title">
+								<h2 style="text-align: center;">Services <span> Populaires</span></h2>
+								
+							</div>
+							<div class="special-links">
+								<ul>
+							    	@foreach($lists as $ls)
+									<li>
+										<a href="{{url('/detailservice/'.$ls->id)}}"> {{$ls->name}}</a>
+									</li>
+									@endforeach
+								</ul>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="col-lg-8 mt-xs-30 mt-sm-30">
+					
+						<div class="full-pic">
+							<figure>
+										<img src="{{ asset('/'.$details->image) }}" alt="">
+							</figure>
+						</div>
+						<div class="text-box mt-40">
+							
+						<div class="box-title mb-20">
+								<h2>{{$details->name}}</h2>
+							</div>
+							
+							
+						</div>
+					</div>
+					       <div class="row mt-45 mt-xs-15 clearfix">
+								
+								<div class="col-md-12 text-box">
+									<div class="box-title mb-20 mt-sm-30 mt-xs-30">
+										
+									</div>
+									<div class="text-content">
+										<p>
+										{!!$details->description!!}	
+										</p>
+									</div>
+								</div>
+							</div>
+				</div>
+			</div>
+		</div>
+		<!-- Service Section end -->
+		<!-- Service Section end -->
+@endsection
