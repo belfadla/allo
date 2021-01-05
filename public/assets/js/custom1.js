@@ -509,7 +509,7 @@ $(document).on('ready', function() {
 				nav : navigation,
 				dots : pagination,
 				autoplay : autoplay,
-				autoplayTimeout : 2000,
+				autoplayTimeout : 0,
 				autoplayHoverPause : autoplayHoverPause,
 				responsive : {
 					0 : {
@@ -587,7 +587,7 @@ $(document).on('ready', function() {
 	 ----------- Loader Function  --------------------
 	 -------------------------------------------------*/
 	var preloader = $("#preloader");
-	preloader.delay(500).fadeOut();
+	preloader.delay(100).fadeOut();
 
 	/*----------------------------------------------
 	 ----------- Map Function  --------------------

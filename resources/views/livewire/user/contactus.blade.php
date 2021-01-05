@@ -45,18 +45,18 @@
 											<input style="border-radius: 25px;"class="input-sm form-full" id="name" type="text" name="name" placeholder="Votre Nom" required>
 										</div>
 										<div class="form-field">
-											<input style="border-radius: 25px;" class="input-sm form-full" id="email" type="email" name="email" placeholder="Email" required>
+											<input style="border-radius: 25px; height:1.2cm;" class="input-sm form-full" id="email" type="email" name="email" placeholder="Email" required>
 										</div>
 										<div class="form-field">
 											<input  style="border-radius: 25px;" class="input-sm form-full" id="sujet" type="text" name="sujet" placeholder="Sujet"required>
 										</div>
 										<div class="form-field">
-											<input  style="border-radius: 25px;" class="input-sm form-full" id="telephone" type="text" name="telephone" placeholder="telephone" required>
+											<input  style="border-radius: 25px;" class="input-sm form-full" id="telephone" type="text" name="telephone" placeholder="Telephone" required>
 										</div>
 									</div>
 									<div class="col-lg-9">
 										<div class="form-field">
-											<textarea style="border-radius: 25px;"class="form-full" id="message" rows="4" name="message" placeholder="Your Message" required></textarea>
+											<textarea style="border-radius: 25px;"class="form-full" id="message" rows="4" name="message" placeholder="Votre Message" required></textarea>
 										</div>
 									</div>
 									<div class="col-lg-9">
@@ -74,7 +74,7 @@
 								<span class="b-line l-left line-h"></span>
 							</div>
 							<div class="contact-info">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3337.0472502259413!2d-8.52163732658073!3d33.2390655269595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91dd68c2a198d%3A0xf18933e073219e2f!2zMzPCsDE0JzIwLjYiTiA4wrAzMScxNy45Ilc!5e0!3m2!1sen!2sma!4v1605352393179!5m2!1sen!2sma" width="600" height="470" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3337.0472502259413!2d-8.52163732658073!3d33.2390655269595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91dd68c2a198d%3A0xf18933e073219e2f!2zMzPCsDE0JzIwLjYiTiA4wrAzMScxNy45Ilc!5e0!3m2!1sen!2sma!4v1605352393179!5m2!1sen!2sma" width="410" height="470" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 								<ul class="event-social">
 									
@@ -88,6 +88,13 @@
 
 									<li>
 										<a href="mailto:Teamglobalwork@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+									</li>
+									
+									<li>
+										<a style="background-color:green;" href="https://shorturl.at/luvQ1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="https://m.youtube.com/channel/UCRNccnslWQYTGbXG3nO3RQw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 							</div>

@@ -6,7 +6,7 @@
 	<title>Allo Tapis</title>
 
 	<!-- Site favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="{{asset('allo1.ico')}}">
+	<link rel="shortcut icon" type="image/x-icon" href="{{asset('tapis.ico')}}">
 
 
 	<!-- Mobile Specific Metas -->
@@ -91,8 +91,8 @@
 	<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="{{url('admin/dashbord')}}">
-				<img src="{{asset('assets/images/logo2-.png')}}" alt="" class="dark-logo">
-				<img src="{{asset('assets/images/logo2-.png')}}" alt="" class="light-logo">
+				<img src="{{asset('assets/images/allologo.png')}}" alt="" class="dark-logo">
+				<img src="{{asset('assets/images/allologo.png')}}" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
@@ -127,14 +127,27 @@
 					</li>
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-support-1"></span><span class="mtext">Partners</span>
+							<span class="micon dw dw-support-1"></span><span class="mtext">Partenaire</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="{{route('partner.create')}}">Ajouter Partner</a></li>
-							<li><a href="{{route('partner.index')}}">liste des partners</a></li>
+							<li><a href="{{route('partner.create')}}">Ajouter Partenaire</a></li>
+							<li><a href="{{route('partner.index')}}">liste des Partenaire</a></li>
 						</ul>
 					</li>
-				
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon fa fa-file-picture-o"></span><span class="mtext">Galerie</span>
+						</a> 
+						<ul class="submenu">
+							<li><a href="{{route('gallery.create')}}">Ajouter photo</a></li>
+							<li><a href="{{route('gallery.index')}}">Galerie</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="{{route('video.index')}}" class="dropdown-toggle no-arrow">
+							<span class="micon fa fa-file-video-o"></span><span class="mtext"> videos </span>
+						</a>
+					</li>
 					<li class="dropdown">
 						<a href="{{route('subscriber.index')}}" class="dropdown-toggle no-arrow">
 							<span class="micon ti-themify-favicon"></span><span class="mtext"> Subscribers </span>
@@ -185,7 +198,7 @@
 	<script src="{{asset('src/plugins/datatables/js/buttons.print.min.js')}}"></script>
 	<script src="{{asset('src/plugins/datatables/js/buttons.html5.min.js')}}"></script>
 	<script src="{{asset('src/plugins/datatables/js/buttons.flash.min.js')}}"></script>
-	<script src="{{asset('src/plugins/datatables/js/pdfmake.min.js')}}"></script>
+
 	<script src="{{asset('src/plugins/datatables/js/vfs_fonts.js')}}"></script>
 	<!-- Datatable Setting js -->
 	<script src="{{asset('vendors/scripts/datatable-setting.js')}}"></script>

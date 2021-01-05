@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Allo Tapis</title>
+        <title>Allo Tapis El Jadida</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
        <!--Main Slider-->
 		<link href="{{asset('assets/css/settings.css')}}" type="text/css" rel="stylesheet" media="screen">
 		<link href="{{asset('assets/css/layers.css')}}" type="text/css" rel="stylesheet" media="screen">
-		<link href="{{asset('assets/css/layers.css')}}" type="text/css" rel="stylesheet" media="screen">
+	
 		<link href="{{asset('assets/css/owl.carousel.css')}}" type="text/css" rel="stylesheet" media="screen">
 		<link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 		<link href="{{asset('assets/css/header1.css')}}" rel="stylesheet" type="text/css" />
@@ -27,10 +27,8 @@
 	
 		<link href="{{asset('assets/css/index.css')}}" rel="stylesheet" type="text/css" />
 		<link href="{{asset('assets/css/theme-color/default.css')}}" rel="stylesheet" type="text/css" id="theme-color" />
-		
 
-<style>
-.pricing-table-wrap .card{border:0;-webkit-box-shadow:0 0 48px rgba(0,0,0,.2);box-shadow:0 0 48px rgba(0,0,0,.2)}.pricing-table-wrap .btn{padding-left:30px;padding-right:30px}.pricing-table-wrap .list-group-flush .list-group-item{background:0 0}.pricing-card{text-align:center}.pricing-card .price-title,.pricing-card .pricing-icon{padding-bottom:30px;text-align:center}.pricing-card .pricing-icon img{margin-top:-30px}.pricing-card .price-title{text-transform:uppercase;font-size:16px;font-weight:500;color:#0092ff;letter-spacing:.15em}.pricing-card .pricing-price{font-size:60px;line-height:1;font-weight:400;padding-bottom:40px;padding-top:20px;color:#0092ff}.pricing-card .pricing-price sub{font-size:16px;font-weight:400;color:#fd486e}.pricing-card .pricing-price sup{font-size:20px;font-weight:400;color:#fd486e;top:10px;vertical-align:top}.pricing-card .text{padding-bottom:30px}.pricing-card .cta{max-width:170px;margin:0 auto;-webkit-transform:translate(0,50%);transform:translate(0,50%)}.pricing-card .cta .btn{display:block;text-align:center}.pricing-card-style2,.profile-setting .profile-edit-list>li{padding:20px}.pricing-card-style2 .pricing-card-header{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-bottom:15px;border-bottom:2px solid #f0f2f7}.pricing-card-style2 .pricing-card-header .left{width:70%}.pricing-card-style2 .pricing-card-header .left h5{color:#0092ff;font-size:18px;font-weight:700}.pricing-card-style2 .pricing-card-header .left p,.pricing-points ul li{font-size:14px;font-weight:500;margin-bottom:0}.pricing-card-style2 .pricing-card-header .right{width:40%;text-align:right;color:#000;font-size:18px;line-height:1.4;font-weight:700}.pricing-card-style2 .pricing-card-header .right span{display:block;font-size:12px}.pricing-card-style2 .pricing-card-body{padding-top:30px;padding-bottom:10px}.pricing-points ul li{padding:0 30px 0 0;margin-bottom:20px;color:#000;position:relative}.pricing-points ul li:after{content:"\f121";font-family:Ionicons;font-size:18px;line-height:1;color:#0092ff;position:absolute;right:0;top:0}.pricing-card-style2 .cta{max-width:170px;margin:0 auto;padding-top:10px;padding-bottom:20px}.pricing-card-style2 .cta .btn{display:block;text-align:center}.profile-photo{width:160px;height:160px;margin:0 auto 15px;position:relative}.profile-photo .edit-avatar{position:absolute;right:-15px;top:0;width:30px;height:30px;line-height:30px;font-size:14px;text-align:center;-webkit-box-shadow:0 2px 4px rgba(0,0,0,.4);box-shadow:0 2px 4px rgba(0,0,0,.4)}.contact-directory-box .contact-avatar span img,.profile-photo .avatar-photo,.profile-photo .edit-avatar{border-radius:100%}.profile-info,.profile-skills,.profile-social{border-top:2px dashed #ecf0f4;padding:15px}.profile-info ul li{margin-bottom:15px;font-size:14px;font-weight:500;word-wrap:break-word}
+<style>.pricing-table-wrap .card{border:0;-webkit-box-shadow:0 0 48px rgba(0,0,0,.2);box-shadow:0 0 48px rgba(0,0,0,.2)}.pricing-table-wrap .btn{padding-left:30px;padding-right:30px}.pricing-table-wrap .list-group-flush .list-group-item{background:0 0}.pricing-card{text-align:center}.pricing-card .price-title,.pricing-card .pricing-icon{padding-bottom:30px;text-align:center}.pricing-card .pricing-icon img{margin-top:-30px}.pricing-card .price-title{text-transform:uppercase;font-size:16px;font-weight:500;color:#0092ff;letter-spacing:.15em}.pricing-card .pricing-price{font-size:60px;line-height:1;font-weight:400;padding-bottom:40px;padding-top:20px;color:#0092ff}.pricing-card .pricing-price sub{font-size:16px;font-weight:400;color:#fd486e}.pricing-card .pricing-price sup{font-size:20px;font-weight:400;color:#fd486e;top:10px;vertical-align:top}.pricing-card .text{padding-bottom:30px}.pricing-card .cta{max-width:170px;margin:0 auto;-webkit-transform:translate(0,50%);transform:translate(0,50%)}.pricing-card .cta .btn{display:block;text-align:center}.pricing-card-style2,.profile-setting .profile-edit-list>li{padding:20px}.pricing-card-style2 .pricing-card-header{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-bottom:15px;border-bottom:2px solid #f0f2f7}.pricing-card-style2 .pricing-card-header .left{width:70%}.pricing-card-style2 .pricing-card-header .left h5{color:#0092ff;font-size:18px;font-weight:700}.pricing-card-style2 .pricing-card-header .left p,.pricing-points ul li{font-size:14px;font-weight:500;margin-bottom:0}.pricing-card-style2 .pricing-card-header .right{width:40%;text-align:right;color:#000;font-size:18px;line-height:1.4;font-weight:700}.pricing-card-style2 .pricing-card-header .right span{display:block;font-size:12px}.pricing-card-style2 .pricing-card-body{padding-top:30px;padding-bottom:10px}.pricing-points ul li{padding:0 30px 0 0;margin-bottom:20px;color:#000;position:relative}.pricing-points ul li:after{content:"\f121";font-family:Ionicons;font-size:18px;line-height:1;color:#0092ff;position:absolute;right:0;top:0}.pricing-card-style2 .cta{max-width:170px;margin:0 auto;padding-top:10px;padding-bottom:20px}.pricing-card-style2 .cta .btn{display:block;text-align:center}.profile-photo{width:160px;height:160px;margin:0 auto 15px;position:relative}.profile-photo .edit-avatar{position:absolute;right:-15px;top:0;width:30px;height:30px;line-height:30px;font-size:14px;text-align:center;-webkit-box-shadow:0 2px 4px rgba(0,0,0,.4);box-shadow:0 2px 4px rgba(0,0,0,.4)}.contact-directory-box .contact-avatar span img,.profile-photo .avatar-photo,.profile-photo .edit-avatar{border-radius:100%}.profile-info,.profile-skills,.profile-social{border-top:2px dashed #ecf0f4;padding:15px}.profile-info ul li{margin-bottom:15px;font-size:14px;font-weight:500;word-wrap:break-word}
 .card-box {
   border: 1px solid #dadada;
   box-shadow:  #0092ff;
@@ -42,15 +40,13 @@
      box-shadow: 1px 8px 20px #0092ff;
     -webkit-transition:  box-shadow .6s ease-in;
   }
+  
+  .navigation a:hover, .navigation a:active {font-size: 100%;}
 </style>
-<script>
-
-</script>
-
     </head>
     <body class="antialiased">
        		<!--loader-->
-		<div id="preloader">
+			   <div id="preloader">
 			<div class="sk-circle">
 				<div class="sk-circle1 sk-child"></div>
 				<div class="sk-circle2 sk-child"></div>
@@ -67,7 +63,7 @@
 			</div>
 		</div>
 
-		<!--loader-->
+		     <!--loader-->
 
 		<!-- HEADER -->
 		<header id="header" class="header header-1 header_tran">
@@ -79,7 +75,7 @@
 								<ul>
 								
 									<li>
-									<a href="https://goo.gl/maps/EVe1SZKag9fhpvwYA" target="_blank"><i class="fa fa-map-marker"></i> Rue 3 N 4 Hay Riyad ElJadida</a>
+									<a href="https://goo.gl/maps/EVe1SZKag9fhpvwYA" target="_blank"><i class="fa fa-map-marker"></i> Rue 3 N 4 Hay Riyad El Jadida</a>
 									&nbsp;&nbsp;
 									<a href="mailto:Teamglobalwork@gmail.com"><i class="fa fa-envelope"></i>Teamglobalwork@gmail.com</a>
 									&nbsp;&nbsp;		
@@ -95,8 +91,8 @@
 							<div class="top-social-icon icons-hover-black">
 								<div class="icons-hover-black">
 									<a href="https://www.facebook.com/allotapiseljadida" target="_blank"> <i class="fa fa-facebook"></i> </a>
-									<a href="https://shorturl.at/qwCIY"> <i class="fa fa-whatsapp"></i> </a>
-									<a href="https://m.youtube.com/channel/UCRNccnslWQYTGbXG3nO3RQw" target="_blank"> <i class="fa fa-youtube"></i> </a>
+									<a href="https://shorturl.at/luvQ1"> <i class="fa fa-whatsapp"></i> </a>
+									<a href="https://m.youtube.com/channel/UCRNccnslWQYTGbXG3nO3RQw" target="_blank"> <i class="fa fa-youtube-play"></i> </a>
 									@if (Route::has('login'))
                
                     @auth
@@ -171,7 +167,7 @@
 														<i class="ion-ios-plus-empty hidden-md-up"></i>
 														<ul class="sub-nav sub-menu" >
 														<?php foreach($query as $link){ ?>
-															<li><a href="{{url('/details/'.$link->id)}}">{{$link->name}}</a></li>
+															<li><a style="background-color:#0275d8;" href="{{url('/details/'.$link->id)}}">{{$link->name}}</a></li>
 													<?php } ?>						
 														</ul>										        	
 												</li>
@@ -256,13 +252,13 @@
 						
 						<div class="col-md-4 mt-xs-30 mt-sm-30">
 							<div class="footer_box__block">
-								<h4>informations</h4>
+								<h4>Informations</h4>
 								<ul>
 									<li>
 										<a href="{{url('/tarifs')}}">Tarifs</a>
 									</li>
 									<li>
-										<a href="#">témoignages</a>
+										<a href="{{url('/temoignage')}}">Témoignages</a>
 									</li>
 									<li>
 										<a href="{{url('/ToutLesServices')}}">Services</a>
@@ -278,7 +274,7 @@
 						</div>
 						<div class="col-md-4 mt-sm-30 mt-xs-30">
 							<div class="footer_box__block address-box">
-								<h4>Contact info</h4>
+								<h4>Contact Info</h4>
 								<ul>
 									<li>
 										<i class="fa fa-phone"></i>
@@ -295,7 +291,7 @@
 									<li>
 										<i class="fa fa-map-marker"></i>
 										<p>
-										Rue 3 N 4 Hay Riyad  Juste A cote De La Pharmacie IBN Rochd ElJadida
+										Rue 3 N 4 Hay Riyad  Juste à côté De La Pharmacie IBN Rochd El Jadida
 										</p>
 									</li>
 									<li>
@@ -316,7 +312,7 @@
 						En vous abonnant à notre liste de diffusion, vous serez toujours à jour avec les dernières nouvelles de nous.						</p>
 						<form action="{{route('store')}}" method="post">
 @csrf
-							<input type="email" name="email" placeholder="saisir e-mail">
+							<input type="email" name="email" placeholder="E-mail" required>
 							<button class="btn-text">
 							Rejoignez Nous 
 							</button>
@@ -346,50 +342,49 @@ Tous les droits sont réservés
 		<script type="text/javascript" src="{{asset('assets/js/jquery.min.js')}}"></script>
 		<script type="text/javascript" src="{{asset('assets/js/tether.min.js')}}"></script>
 		<script type="text/javascript" src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-		<script src="{{asset('assets/js/jquery.easing.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/js/jquery.easing.js')}}" Defer type="text/javascript"></script>
 
 		<!-- fancybox Js -->
-		<script src="{{asset('assets/js/jquery.mousewheel-3.0.6.pack.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/js/jquery.fancybox.pack.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/js/jquery.mousewheel-3.0.6.pack.js')}}" Defer type="text/javascript"></script>
+		<script src="{{asset('assets/js/jquery.fancybox.pack.js')}}" Defer type="text/javascript"></script>
 		<!-- popup -->
-		<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}" Defer type="text/javascript"></script>
 
 		<!-- carousel Js -->
 		<script src="{{asset('assets/js/owl.carousel.js')}}" type="text/javascript"></script>
 
 		<!-- imagesloaded Js -->
-		<script src="{{asset('assets/js/imagesloaded.pkgd.min.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/js/imagesloaded.pkgd.min.js')}}"  Defer type="text/javascript"></script>
 		<!-- masonry,isotope Effect Js -->
-		<script src="{{asset('assets/js/imagesloaded.pkgd.min.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/js/isotope.pkgd.min.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/js/masonry.pkgd.min.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/js/jquery.appear.js')}}" type="text/javascript"></script>
+	
+		<script src="{{asset('assets/js/isotope.pkgd.min.js')}}" Defer type="text/javascript"></script>
+		<script src="{{asset('assets/js/masonry.pkgd.min.js')}}" Defer type="text/javascript"></script>
+		<script src="{{asset('assets/js/jquery.appear.js')}}" Defer type="text/javascript"></script>
 		<!-- Mail Function Js -->
-		<script src="{{asset('assets/js/mail.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/js/mail.js')}}" Defer type="text/javascript"></script>
 
 		<!-- revolution Js -->
-		<script type="text/javascript" src="{{asset('assets/js/jquery.themepunch.tools.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('assets/js/jquery.themepunch.revolution.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('assets/extensions/revolution.extension.slideanims.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('assets/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('assets/extensions/revolution.extension.navigation.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('assets/extensions/revolution.extension.parallax.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('assets/js/jquery.revolution.js')}}"></script>
-		<!-- custom Js -->
-		<script src="{{asset('assets/js/custom1.js')}}" type="text/javascript"></script>
+		<script type="text/javascript" Defer src="{{asset('assets/js/jquery.themepunch.tools.min.js')}}"></script>
+		<script type="text/javascript" Defer src="{{asset('assets/js/jquery.themepunch.revolution.min.js')}}"></script>
 	
+		<script type="text/javascript" Defer src="{{asset('assets/js/jquery.revolution.js')}}"></script>
+		<!-- custom Js -->
+		<script src="{{asset('assets/js/custom1.js')}}"  Defer type="text/javascript"></script>
+
 	<!-- GetButton.io widget -->
 <!-- GetButton.io widget -->
+
+<!-- GetButton.io widget -->
 <script type="text/javascript">
+
     (function () {
         var options = {
             facebook: "234726833708153", // Facebook page ID
-            whatsapp: "00212661579024", // WhatsApp number
-            call_to_action: "Messagez Nous", // Call to action
+            whatsapp: "+212661579024", // WhatsApp number
+            call_to_action: "Contactez-Nous", // Call to action
             button_color: "#0092ff", // Color of button
             position: "right", // Position may be 'right' or 'left'
             order: "facebook,whatsapp", // Order of buttons
-		
         };
         var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
@@ -397,6 +392,7 @@ Tous les droits sont réservés
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
+<!-- /GetButton.io widget -->
 <!-- /GetButton.io widget -->
     </body>
 

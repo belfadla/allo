@@ -30,11 +30,15 @@ Fortify::registerView(function () {
     return view('auth.register',['list'=>$listService]);
 });
 
-
+//Video
+Route::resource('video',App\Http\Controllers\VideoController::class);
 //Price
 Route::resource('price',App\Http\Controllers\PriceController::class);
 //Details
-
+Route::get('detail/deleteimage/{id}',[App\Http\Controllers\DetailsController::class, 'deleteImage']);
+Route::post('/ajouter', [App\Http\Controllers\DetailsController::class, 'ajouter']);
+Route::get('detail/activate/{id}', [App\Http\Controllers\DetailsController::class, 'activate']);
+Route::get('detail/unactivate/{id}', [App\Http\Controllers\DetailsController::class, 'unactivate']);
 Route::get('detail/service/{id}',[App\Http\Controllers\DetailsController::class,'ajouter']);
 Route::resource('detail',App\Http\Controllers\DetailsController::class);
 
@@ -57,7 +61,7 @@ Route::get('/aproposnous',[App\Http\Controllers\IndexController::class,'apropos'
 Route::get('/tarifs',[App\Http\Controllers\IndexController::class,'pricing']);
 Route::post('send-comment',[App\Http\Controllers\ReviewController::class,'comment']);
 Route::get('/contacteznous',[App\Http\Controllers\IndexController::class,'contactez']);
-Route::resource('/',App\Http\Controllers\IndexController::class);
+Route::resource('/',App\Http\Controllers\IndexController::class)->middleware('pagespeed');
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');
@@ -93,6 +97,15 @@ Route::resource('slider',App\Http\Controllers\SliderController::class);
 Route::resource('partner',App\Http\Controllers\PartnerController::class);
 
 Route::resource('subscriber',App\Http\Controllers\SubscriberController::class);
+
+
+
+
+Route::get('gallery/activate/{id}', [App\Http\Controllers\GalleryController::class, 'activate']);
+Route::get('gallery/unactivate/{id}', [App\Http\Controllers\GalleryController::class, 'unactivate']);
+Route::resource('gallery',App\Http\Controllers\GalleryController::class);
+
+
 
 
 

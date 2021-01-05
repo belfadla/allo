@@ -164,6 +164,26 @@ class ServiceController extends Controller
                 'image'=>'max:1000',
         ]);
         $formInput=$request->all();
+        $slider=array();
+        if(empty($request->input('atelier'))){
+            $slider['atelier']="null";
+        }
+        else{
+           
+           
+            $slider['atelier']=$request->input('atelier');
+        }
+        if(empty($request->input('domicile'))){
+         $slider['domicile']="null";
+     }
+     else{
+        
+        
+         $slider['domicile']=$request->input('domicile');
+     } 
+     $slider['name']=$request->name;
+     $slider['description']=$request->description;
+     $slider['type']=$request->type;
         if($update_product->image==''){
             $image=$request->file('image');
         if($image)
@@ -176,9 +196,8 @@ class ServiceController extends Controller
             $success=$image->move($upload_path,$image_full_name);
             if($success)
             {
-                $slider=array();
-                $slider['name']=$request->name;
-                $slider['description']=$request->description;
+                
+               
                  $slider['image']=$image_url;
               DB::table('services')->where('id',$id)->update($slider);
               session()->flash('success','service modifier');
@@ -191,13 +210,11 @@ class ServiceController extends Controller
         }
         else
         {
-               $slider=array();
-                $slider['name']=$request->name;
-                $slider['description']=$request->description;
+              
+               
                  $slider['image']=$update_product->image;
-                 $slider['type']=$request->atelier;
-                 $slider['atelier']=$request->atelier;
-                 $slider['domicile']=$request->domicile;
+                
+               
               DB::table('services')->where('id',$id)->update($slider);
               session()->flash('success','service modifier');
                return redirect()->route('service.create');  
@@ -231,7 +248,9 @@ class ServiceController extends Controller
     {
         //
         $slider=Service::where('id',$id)
-        ->delete();    
+        ->delete();  
+        $slider=Details::where('service_id',$id)
+        ->delete();   
         session()->flash('success','service bien Supprimer') ;
         return redirect()->route('service.create');
     }

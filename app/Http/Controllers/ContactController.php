@@ -23,7 +23,7 @@ class ContactController extends Controller
         ), function($message) use ($request)
     {
         
-        $message->to('sarabutterfly58@gmail.com','Allo Tapis ElJadida')->replyTo($request->email)
+        $message->to('info@allotapiseljadida.com','Allo Tapis ElJadida')->replyTo($request->email)
         ->subject($request->sujet);
     });
     Alert::success('Success', 'Merci De Nous Contacter!!!');

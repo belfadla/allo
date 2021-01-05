@@ -10,10 +10,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class DevisController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('authadmin');
-    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -57,8 +54,7 @@ class DevisController extends Controller
             'msg' =>  $request->message
         ), function($message) use ($request)
     {
-        $message->from('belfadla.fati@gmail.com',$request->name);
-        $message->to('sarabutterfly58@gmail.com','Allo Tapis ElJadida')->replyTo($request->email)
+        $message->to('info@allotapiseljadida.com','Allo Tapis ElJadida')->replyTo($request->email)
         ->subject($request->sujet);
     });
     Alert::success('Success', 'Merci On a bien recu votre demande de devis !!!');

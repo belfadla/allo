@@ -45,11 +45,22 @@
 								<div class="pricing-card-header">
 									<div class="left">
 										<h5>{{$link->name}}</h5>
-										<p >A partir de 
+											@if($link->atelier==='null' && $link->domicile==='null')
+											
+											@elseif($link->atelier==='null')
+												<p >A partir de 
+										<span style="float:right;font-weight: bold;"> {{$link->domicile}} dh<span>/ {{$link->type}}</span></span>
+                                    	</p> 
+											@elseif($link->domicile==='null')
+												<p >A partir de 
+										<span style="float:right;font-weight: bold;"> {{$link->atelier}} dh<span>/ {{$link->type}}</span></span>
+                                    	</p> 
+											@else
+												<p >A partir de 
+										<span style="float:right;font-weight: bold;"> {{$link->atelier}} dh<span>/ {{$link->type}}</span></span>
+                                    	</p> 
+											@endif
 									
-										<span style="float:right;font-weight: bold;">dh {{$link->atelier}}<span>/ {{$link->type}}</span></span>
-
-									</p> 
 									
 										<div class="pricing-price">
 										
@@ -90,9 +101,14 @@
 								<div class="pricing-card-header">
 									<div class="left">
 										<h5>{{$ls->name}}</h5>
+										@if($ls->type==='devis')
+								
+									<br>
+										@else
 										<p >A partir de 
-											<span style="float:right;font-weight: bold;">dh {{$ls->atelier}}<span>/ {{$ls->type}}</span>
-										</span></p> 
+											<span style="float:right;font-weight: bold;">{{$ls->atelier}} dh<span>/ {{$ls->type}}</span>
+										</span></p>
+										@endif
 										<div class="pricing-price">
 										
 										</div>
@@ -106,7 +122,9 @@
 										<ul class="list-unstyled mb-4">
 											@if($ls->domicile==='null' && $ls->atelier==='null')
 											<br>
+											Contactez Nous pour avoir ton devis!!
 											<br>
+										<br>
 											@else
 											<li>Atelier {{$ls->atelier}} dh</li>
 											<li>Domicile {{$ls->domicile}} dh</li>

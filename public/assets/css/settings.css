@@ -117,7 +117,7 @@ website:   	http://www.themepunch.com
 
 .tp-simpleresponsive img,
 .rev_slider img{
-	max-width:none !important;
+	width:1363px;
 	-moz-transition: none 0;
 	-webkit-transition: none 0;
 	-o-transition: none 0;
@@ -126,6 +126,7 @@ website:   	http://www.themepunch.com
 	padding:0px;
 	border-width:0px;
 	border:none;
+
 }
 
 .rev_slider .no-slides-text{

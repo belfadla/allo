@@ -1,16 +1,16 @@
- @extends('index')
+@extends('index')
 @section('content')   
         	<!--  Main Banner Start Here-->
 		<div class="main-banner banner_up">
 			<div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper" data-alias="news-gallery34">
 				<!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-				<div id="rev_slider_34_1" class="rev_slider" data-version="5.0.7">
+				<div id="rev_slider_34_1" class="rev_slider" data-version="5.0.7" >
 					<ul>
 					@foreach($slider as $ls)
 						<!-- SLIDE  -->
 						<li data-index="rs-{{$ls->id}}">
 							<!-- MAIN IMAGE -->
-							<img src="{{ asset('/'.$ls->image) }}"  alt=""   class="rev-slidebg " >
+							<img style="max-width:100%; height:auto;" src="{{ asset('/'.$ls->image) }}"  alt=""   class="rev-slidebg " >
 							<!-- LAYERS -->
 							<!-- LAYER NR. 2 -->
 							<div class="tp-caption Newspaper-Title   tp-resizeme "
@@ -20,7 +20,8 @@
 							data-fontsize="['50','50','50','30']"
 							data-lineheight="['55','55','55','35']"
 							data-width="['700','700','700','420']"
-							data-height="none"
+							data-max-height="['400', '768','960','720']"
+							data-height="none" 
 							data-whitespace="normal"
 							data-transform_idle="o:1;"
 							data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
@@ -141,7 +142,7 @@
 							<div class="courses_popular" style="border: 1px solid #dedede;">
 								<div class="top_cours">
 									<figure >
-									<img src="{{ asset('/'.$ls->image) }}"alt="" />
+									<img  src="{{ asset('/'.$ls->image) }}" />
 									</figure>
 									<div class="apply_box d-flex align-items-center">
 										<div class="full_width">
@@ -173,10 +174,15 @@
 			<div class="opacity-extra-medium bg-black"></div>
 			<div class="container position-relative">
 				<div class="row">
+				    @if(!empty($video->link))
+				    	<div class="col-lg-6 col-md-6 offset-md-3 text-center pop_section">
+						<a class="popup-youtube popup-youtube" href="{{$video->link}}"><img src="assets/images/icon-play.png" alt="" data-no-retina=""></a>
+					</div>
+					@else
 					<div class="col-lg-6 col-md-6 offset-md-3 text-center pop_section">
 						<a class="popup-youtube popup-youtube" href="https://www.youtube.com/watch?v=28TgRffqMlU"><img src="assets/images/icon-play.png" alt="" data-no-retina=""></a>
 					</div>
-
+@endif
 				</div>
 			</div>
 		</section>
@@ -205,31 +211,31 @@
 								<div class="row">
 								<div class="col-md-6">
 										<div class="form-field">
-											<input class="input-sm form-full" id="name" type="text" name="name" placeholder="Saisir Votre Nom" required>
+											<input class="input-sm form-full"   id="name" type="text" name="name" placeholder="Nom" required>
 										</div>
 									</div>
 
 									<div class="col-md-6">
 										<div class="form-field">
-											<input class="input-sm form-full" id="email" type="email" name="email" placeholder="Saisir Votre Email" required>
+											<input class="input-sm form-full" id="email" type="email" name="email" placeholder="Email" required>
 										</div>
 									</div>
 									
 									<div class="col-md-6">
 										<div class="form-field">
-									<input class="input-sm form-full" id="telephone" type="text" name="telephone" placeholder="Saisir Votre Numero" required>
+									<input class="input-sm form-full" id="telephone" type="text" name="telephone" placeholder="Numero" required>
 										</div>
 									</div>
 									
 									<div class="col-md-6">
 										<div class="form-field">
-									<input class="input-sm form-full" id="sujet" type="text" name="sujet" placeholder="Saisir Votre Sujet" required>
+									<input class="input-sm form-full" id="sujet" type="text" name="sujet" placeholder="Sujet" required>
 										</div>
 									</div>
 
 									<div class="col-md-12">
 										<div class="form-field">
-											<textarea class="form-full" id="message" rows="7" name="message" placeholder="Saisir Votre Message" required></textarea>
+											<textarea class="form-full" id="message" rows="7" name="message" placeholder="Message" required></textarea>
 										</div>
 									</div>
 									<div class="col-md-12">
@@ -249,7 +255,41 @@
 			</div>
 		</section>
 		<!-- Date_form_End -->
+	<!-- Gallery_Section -->
+	<section id="work" class="padding ptb-xs-40">
+			<div class="container">
+				<div class="row pb-60 pb-xs-40">
+					<div class="col-md-8 offset-md-2 text-center">
+						<div class="section_tit">
+							<h2>Notre Galerie</h2>
+							<span class="three_line"></span>
+						</div>
+					</div>
+				</div>
+				<!-- work Filter -->
 
+				<!-- End work Filter -->
+				<div class="row container-grid nf-col-3">
+                @foreach($photo as $ls)
+					<div class="nf-item branding coffee spacing">
+						<div class="item-box">
+							<a> <img alt="1" src="{{ asset('/'.$ls->image) }}" class="item-container"> </a>
+							<div class="link-zoom">
+								<a href="{{ asset('/'.$ls->image) }}" class="fancylight popup-btn same_style" data-fancybox-group="light" > <i class="fa fa-search-plus"></i> </a>
+								<div class="gallery-heading">
+									<h4><a href="#">{{$ls->name}}</a></h4>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				@endforeach
+
+				</div>
+
+			</div>
+		</section>
 		<!-- Gallery_Section -->
 		<section id="work" class="padding ptb-xs-40">
 			<div class="container">

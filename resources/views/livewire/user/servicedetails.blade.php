@@ -6,7 +6,7 @@
 					<div class="title_row">
 						<h1 data-title="Services Detail"><span>Services Detail</span></h1>
 						<div class="page-breadcrumb">
-							<a>Acceuil</a>&nbsp;&nbsp;>>&nbsp;&nbsp;  <a>Tous Les Services</a>&nbsp;&nbsp;>>&nbsp;&nbsp; <span>{{$details->name}}</span>
+							<a href="{{url('/')}}">Acceuil</a>&nbsp;&nbsp;>>&nbsp;&nbsp;  <a href="{{url('/ToutLesServices')}}">Tous Les Services</a>&nbsp;&nbsp;>>&nbsp;&nbsp; <span>{{$details->name}}</span>
 							
 						</div>
 						
@@ -36,11 +36,12 @@
 							<div class="box-title mb-20">
 								<h2>{{$details->name}}</h2>
 							</div>
-							<div class="text-content">
+							<div class="text-content" style=" text-align: justify;
+  text-justify: inter-word;">
 								
-								<p>
+								<p >
 								
-								{!!Illuminate\Support\Str::limit($details->description, 550, ' ')!!}		
+								{!!$details->description!!}		
 
 							 </p>
 							</div>
@@ -50,19 +51,10 @@
 						
 					</div>
 				
-					     
+					    
 				          
 				</div>
-			            	<div class="row">
-									<div class="col-sm-12 service-box mt-30 mt-xs-0">
-										
-										<div class="text-content mb-30">
-											<p>
-											{!! substr($details->description, 550)!!}	</p>
-										</div>
-										
-									</div>
-							</div>
+			            	
 
 
 							<?php $query=DB::table('details')->select('*')->where(['service_id'=>$details->id,'status'=>1])->get();
@@ -76,9 +68,10 @@
 								<div class="box-title mb-20 mt-sm-30 mt-xs-30">
 									<h3>{{$link->name}}</h3>
 								</div>
-								<div class="text-content">
+								<div class="text-content" style=" text-align: justify;
+  text-justify: inter-word;">
 									<p>
-									{!!strip_tags(Illuminate\Support\Str::limit($link->description, 1000))!!}
+									{!!$link->description!!}
 								
 									</p>
 								</div>
@@ -90,10 +83,7 @@
 						<div class="row">
 							<div class="col-sm-12 service-box mt-30 mt-xs-0">
 								<h3></h3>
-								<div class="text-content mb-30">
-									<p>
-									{!! substr($link->description, 1000)!!}	</p>
-								</div>
+								
 								
 							</div>
 						</div>

@@ -6,6 +6,7 @@ use Livewire\Component;
 
 class AminDashbordComponent extends Component
 {
+    
     public function render()
     {
         return view('livewire.admin.amin-dashbord-component')->layout('admin');

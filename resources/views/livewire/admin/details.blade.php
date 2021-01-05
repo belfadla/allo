@@ -67,23 +67,23 @@
 										<i class="dw dw-more"></i>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-									<a class="dropdown-item" href="">
-										<i class="icon-copy ion-plus-round"></i> Ajouter details </a>
-										<a class="dropdown-item" href="">
-                                        <i class="icon-copy ion-android-menu"></i> details </a>
-                                    <form action="" method="POST">
-                                
+									
+                                    <form action="{{route('detail.destroy',$service->id)}}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{method_field('DELETE')}}
                                         
-                                        <a class="dropdown-item" href="">
+                                    @if($service->status==1)
+                                        <a class="dropdown-item" href="{{URL::to('detail/unactivate/'.$service->id)}}">
                                         <i class="icon-copy dw dw-thumb-down"></i> desactiver 
                             </a>
-                         
-                            <a  class="dropdown-item" href="">
+                            @else
+                            <a  class="dropdown-item" href="{{URL::to('detail/activate/'.$service->id)}}">
                                   
                                     <i class="icon-copy dw dw-like"></i>  activer
                                 </a>
+                            @endif
                           
-										<a class="dropdown-item" href=""><i class="dw dw-edit2"></i> Modifier</a>
+										<a class="dropdown-item" href="{{route('detail.edit',$service->id)}}"><i class="dw dw-edit2"></i> Modifier</a>
                                    
                                         <button class="dropdown-item"  onclick="return confirm('Voulez vous vraiment supprimer ce service?');">                                
                                         <i class="dw dw-delete-3"></i> Supprimer

@@ -1192,7 +1192,7 @@ form label.error {
 }
 .inner-intro .container {
 	position: relative;
-	height: 500px;
+	height: 145%;
 	display: table;
 }
 .inner-intro .container .title {

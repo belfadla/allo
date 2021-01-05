@@ -10,6 +10,8 @@ use App\Models\Slider;
 use App\Models\Details;
 use App\Models\Partner;
 use App\Models\Subscriber;
+use App\Models\Gallery;
+use App\Models\Video;
 use Illuminate\Pagination\Paginator;
 class IndexController extends Controller
 {
@@ -26,8 +28,10 @@ class IndexController extends Controller
         $list=Slider::where(['status'=>1])
         ->get(); 
         $listPartners=Partner::all()->take(5);
-        $listReviews=Review::all()->take(6);
-        return view('livewire.user.home_content',['list'=>$listService,'slider'=>$list,'partner'=>$listPartners,'review'=>$listReviews]);
+        $listReviews=Review::all()->take(3);
+        $photo=Gallery::all()->take(6); 
+         $video=Video::all()->first(); 
+        return view('livewire.user.home_content',['video'=>$video,'photo'=>$photo,'list'=>$listService,'slider'=>$list,'partner'=>$listPartners,'review'=>$listReviews]);
     }
 
     /**

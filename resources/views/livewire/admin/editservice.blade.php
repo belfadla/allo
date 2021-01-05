@@ -17,7 +17,7 @@
 								</ol>
 							</nav>
 						</div>
-						
+						 
 					</div>
 				</div>
 				@if(session()->has('success'))
@@ -42,18 +42,41 @@
 							<textarea class="textarea_editor form-control border-radius-0" name="description" id="description" >{!!$list->description!!}</textarea>
 						</div>
 						<div class="form-group">
+									<label> Selectionnez type</label>
+									<select class="selectpicker form-control" name="type" id="type" data-style="btn-outline-primary" data-size="5">
+											<option value="&#13217;">&#13217;</option>
+											<option value="place">Place</option>
+											<option value="unité">Unité</option>
+											<option value="devis">Devis</option>
+									</select>
+						</div>
+						<div class="form-group">
 						
 						<div class="col-md-6 ">
 							<label class="weight-600">Lieu de Nettoyage</label>
+							@if($list->atelier === 'null')
+							<div class="custom-control custom-checkbox mb-5">
+								<input type="checkbox" class="custom-control-input" id="customCheck1" name="lieu[]"onclick="myFunction()" value="null" >
+								<label class="custom-control-label" for="customCheck1">Atelier</label>
+							</div>
+							<div class="col-md-6 ">
+									<div class="custom-control ">
+									<input style="display:none;" type="text" class="form-control" placeholder="prix atelier" id="prix[0]" name="atelier" value="null" >
+									</div>
+						   </div>
+							@else
 							<div class="custom-control custom-checkbox mb-5">
 								<input type="checkbox" class="custom-control-input" id="customCheck1" name="lieu[]"onclick="myFunction()" value="null" checked>
 								<label class="custom-control-label" for="customCheck1">Atelier</label>
 							</div>
 							<div class="col-md-6 ">
 									<div class="custom-control ">
-									<input style="display:none;" type="text" class="form-control" placeholder="prix atelier" id="prix[0]" name="atelier" >
+									<input style="display:block;" type="text" class="form-control" placeholder="prix atelier" id="prix[0]" name="atelier" value="{{$list->atelier}}" >
 									</div>
 						   </div>
+							@endif
+							
+							@if($list->domicile === 'null')
 							<div class="custom-control custom-checkbox mb-5">
 								<input type="checkbox" class="custom-control-input" id="customCheck2" name="lieu[]" onclick="myFunction1()" value="null">
 								<label class="custom-control-label" for="customCheck2" >Domicile</label>
@@ -61,9 +84,19 @@
 							<div class="col-md-6 ">
 									<div class="custom-control ">
 									<input style="display:none;" type="text" class="form-control" placeholder="prix domicile" id="prix[1]" name="domicile" >
+							     </div>
+						     </div>
+							 @else
+							 <div class="custom-control custom-checkbox mb-5">
+								<input type="checkbox" class="custom-control-input" id="customCheck2" name="lieu[]" onclick="myFunction1()" value="null" checked>
+								<label class="custom-control-label" for="customCheck2" >Domicile</label>
 							</div>
-						   </div>
-							
+							<div class="col-md-6 ">
+									<div class="custom-control ">
+									<input style="display:block;" type="text" class="form-control" placeholder="prix domicile" id="prix[1]" name="domicile" value="{{$list->domicile}}">
+							     </div>
+						     </div>
+							 @endif
 						</div>
 
 					

@@ -8,6 +8,8 @@
 <p>
  vous avez recu un nouveau email de la part de :
  </p> 
+ <p>Telephone: {{ $telephone }}</p>
+ 
  <p>
  Nom: {{ $name }}
  </p>
